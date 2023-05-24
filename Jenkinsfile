@@ -37,8 +37,8 @@ node {
                         cat "$SSH_KEY" > ssh_key
                         chmod 600 ssh_key
                         apk add openssh
-                        scp -o StrictHostKeyChecking=no -i ssh_key dist/add2vals ubuntu@54.87.148.162:/home/ubuntu/deploy
-                        ssh -o StrictHostKeyChecking=no -i ssh_key ubuntu@54.87.148.162 "sudo chmod +X /home/ubuntu/deploy/*"
+                        scp -o StrictHostKeyChecking=no -i ssh_key dist/add2vals ubuntu@44.204.79.35:/home/ubuntu/deploy
+                        ssh -o StrictHostKeyChecking=no -i ssh_key ubuntu@44.204.79.35 "sudo chmod +X /home/ubuntu/deploy/*"
                         '''
                 }
             }
